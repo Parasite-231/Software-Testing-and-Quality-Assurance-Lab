@@ -1,11 +1,12 @@
 package Test;
 
 import Main.TrigonometricSineOperation;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TrigonometricSineOperationTest {
+public class TrigonometricSineOperationTest {
 
     TrigonometricSineOperation testCase81 = new TrigonometricSineOperation(0);
 
@@ -23,7 +24,7 @@ class TrigonometricSineOperationTest {
 
 
     @Test
-    void testingInputNumbersAreNotNullForTrigonometricSineOperation() {
+    public void testingInputNumbersAreNotNullForTrigonometricSineOperation() {
 
 
         double testResult1 = testCase81.getNum1();
@@ -36,7 +37,7 @@ class TrigonometricSineOperationTest {
 
     }
     @Test
-    void testingResultForPositiveIntegerInputNumberForTrigonometricSineOperation() {
+    public  void testingResultForPositiveIntegerInputNumberForTrigonometricSineOperation() {
 
         double testResult = testCase82.getResult();
         assertEquals(1,testResult);
@@ -44,7 +45,7 @@ class TrigonometricSineOperationTest {
 
     }
     @Test
-    void testingResultForFloatIntegerInputNumberForTrigonometricSineOperation() {
+    public void testingResultForFloatIntegerInputNumberForTrigonometricSineOperation() {
 
 
         double testResult = testCase83.getResult();
@@ -53,7 +54,7 @@ class TrigonometricSineOperationTest {
 
     }
     @Test
-    void testingResultForNegativeIntegerInputNumberForTrigonometricSineOperation() {
+    public  void testingResultForNegativeIntegerInputNumberForTrigonometricSineOperation() {
 
 
         double testResult = testCase84.getResult();
@@ -62,7 +63,7 @@ class TrigonometricSineOperationTest {
 
     }
     @Test
-    void testingResultForNegativeLargeIntegerInputNumberForTrigonometricSineOperation() {
+    public  void testingResultForNegativeLargeIntegerInputNumberForTrigonometricSineOperation() {
 
 
 
@@ -78,7 +79,7 @@ class TrigonometricSineOperationTest {
 
     }
     @Test
-    void testingResultForPositiveLargeIntegerInputNumberForTrigonometricSineOperation() {
+    public void testingResultForPositiveLargeIntegerInputNumberForTrigonometricSineOperation() {
 
 
 

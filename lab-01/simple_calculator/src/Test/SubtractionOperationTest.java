@@ -2,11 +2,13 @@ package Test;
 
 import Main.SubtractionOperation;
 import Main.SubtractionOperation;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SubtractionOperationTest {
+public class SubtractionOperationTest {
 
     SubtractionOperation testCase8 = new SubtractionOperation(2,3);
     SubtractionOperation testCase9 = new SubtractionOperation(2.02,3.90);
@@ -25,7 +27,7 @@ class SubtractionOperationTest {
 
 
     @Test
-    void testingForFirstIntegerInputNumber() {
+    public void testingForFirstIntegerInputNumber() {
 
 
         double testResult = testCase8.getNum1();
@@ -35,7 +37,7 @@ class SubtractionOperationTest {
     }
 
     @Test
-    void testingForSecondIntegerInputNumber() {
+    public void testingForSecondIntegerInputNumber() {
 
 
         double testResult = testCase8.getNum2();
@@ -45,7 +47,7 @@ class SubtractionOperationTest {
     }
 
     @Test
-    void testingResultForIntegerSubtractionOperation() {
+    public void testingResultForIntegerSubtractionOperation() {
 
         double testResult = testCase8.getResult();
         assertEquals(5,testResult);
@@ -53,7 +55,7 @@ class SubtractionOperationTest {
     }
 
     @Test
-    void testingForFirstFloatInputNumber() {
+    public  void testingForFirstFloatInputNumber() {
 
 
         double testResult = testCase9.getNum1();
@@ -62,7 +64,7 @@ class SubtractionOperationTest {
 
     }
     @Test
-    void testingForSecondFloatInputNumber() {
+    public void testingForSecondFloatInputNumber() {
 
 
         double testResult = testCase9.getNum1();
@@ -71,7 +73,7 @@ class SubtractionOperationTest {
 
     }
     @Test
-    void testingResultForFloatSubtractionOperation() {
+    public void testingResultForFloatSubtractionOperation() {
 
         double testResult = testCase9.getResult();
         assertEquals(5,testResult);
@@ -79,7 +81,7 @@ class SubtractionOperationTest {
     }
 
     @Test
-    void testingForFirstNegativeInputNumber() {
+    public void testingForFirstNegativeInputNumber() {
 
 
         double testResult = testCase10.getNum1();
@@ -88,7 +90,7 @@ class SubtractionOperationTest {
 
     }
     @Test
-    void testingForSecondNegativeInputNumber() {
+    public void testingForSecondNegativeInputNumber() {
 
 
         double testResult = testCase10.getNum1();
@@ -97,7 +99,7 @@ class SubtractionOperationTest {
 
     }
     @Test
-    void testingResultForNegativeSubtractionOperation() {
+    public  void testingResultForNegativeSubtractionOperation() {
 
         double testResult = testCase10.getResult();
         assertEquals(5,testResult);
@@ -105,7 +107,7 @@ class SubtractionOperationTest {
     }
 
     @Test
-    void testingForFirstLargeInputNumber() {
+    public  void testingForFirstLargeInputNumber() {
 
 
         double testResult = testCase11.getNum1();
@@ -114,7 +116,7 @@ class SubtractionOperationTest {
 
     }
     @Test
-    void testingForSecondLargeInputNumber() {
+    public   void testingForSecondLargeInputNumber() {
 
 
         double testResult = testCase11.getNum1();
@@ -123,7 +125,7 @@ class SubtractionOperationTest {
 
     }
     @Test
-    void testingResultForLargeSubtractionOperation() {
+    public void testingResultForLargeSubtractionOperation() {
 
 
         Throwable exception = assertThrows(
@@ -138,7 +140,7 @@ class SubtractionOperationTest {
     }
 
     @Test
-    void testingForFirstNegativeLargeInputNumber() {
+    public void testingForFirstNegativeLargeInputNumber() {
 
 
         double testResult = testCase12.getNum1();
@@ -147,7 +149,7 @@ class SubtractionOperationTest {
 
     }
     @Test
-    void testingForNegativeSecondLargeInputNumber() {
+    public void testingForNegativeSecondLargeInputNumber() {
 
 
         double testResult = testCase12.getNum1();
@@ -156,7 +158,7 @@ class SubtractionOperationTest {
 
     }
     @Test
-    void testingResultForNegativeLargeSubtractionOperation() {
+    public  void testingResultForNegativeLargeSubtractionOperation() {
 
 
         Throwable exception = assertThrows(
@@ -173,7 +175,7 @@ class SubtractionOperationTest {
 
 
     @Test
-    void testingForPositiveSmallInputNumber() {
+    public void testingForPositiveSmallInputNumber() {
 
 
         double testResult = testCase13.getNum1();
@@ -182,7 +184,7 @@ class SubtractionOperationTest {
 
     }
     @Test
-    void testingForNegativeLargeInputNumber() {
+    public void testingForNegativeLargeInputNumber() {
 
 
         double testResult = testCase13.getNum1();
@@ -191,7 +193,7 @@ class SubtractionOperationTest {
 
     }
     @Test
-    void testingResultForSmallPositiveAndLargeNegativeNumberSubtractionOperation() {
+    public  void testingResultForSmallPositiveAndLargeNegativeNumberSubtractionOperation() {
 
 
         Throwable exception = assertThrows(
@@ -206,7 +208,7 @@ class SubtractionOperationTest {
     }
 
     @Test
-    void testingForLargeNegativeInputNumber() {
+    public void testingForLargeNegativeInputNumber() {
 
 
         double testResult = testCase14.getNum1();
@@ -215,7 +217,7 @@ class SubtractionOperationTest {
 
     }
     @Test
-    void testingForSmallPositiveInputNumber() {
+    public  void testingForSmallPositiveInputNumber() {
 
         double testResult = testCase14.getNum1();
         assertNotNull(testResult);
@@ -223,7 +225,7 @@ class SubtractionOperationTest {
 
     }
     @Test
-    void testingResultForLargeNegativeAndSmallPositiveNumberSubtractionOperation() {
+    public void testingResultForLargeNegativeAndSmallPositiveNumberSubtractionOperation() {
 
 
         Throwable exception = assertThrows(

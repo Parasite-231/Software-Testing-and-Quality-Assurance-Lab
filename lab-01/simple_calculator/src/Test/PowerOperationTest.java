@@ -2,7 +2,8 @@ package Test;
 
 import Main.PowerOperation;
 import Main.PowerOperation;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -29,7 +30,7 @@ public class PowerOperationTest {
 
 
     @Test
-    void testingInputNumbersAreNotNullForPowerOperation() {
+    public  void testingInputNumbersAreNotNullForPowerOperation() {
 
 
         double testResult1 = testCase68.getNum1();
@@ -42,7 +43,7 @@ public class PowerOperationTest {
 
     }
     @Test
-    void testingResultForPositiveIntegerInputNumberForPowerOperation() {
+    public void testingResultForPositiveIntegerInputNumberForPowerOperation() {
 
 
         double testResult = testCase69.getResult();
@@ -51,7 +52,7 @@ public class PowerOperationTest {
 
     }
     @Test
-    void testingResultForNegativeIntegerInputNumberForPowerOperation() {
+    public  void testingResultForNegativeIntegerInputNumberForPowerOperation() {
 
         double testResult = testCase70.getResult();
         assertEquals(1,testResult);
@@ -59,7 +60,7 @@ public class PowerOperationTest {
 
     }
     @Test
-    void testingResultForZeroIntegerInputNumberForPowerOperation() {
+    public  void testingResultForZeroIntegerInputNumberForPowerOperation() {
 
 
 
@@ -75,7 +76,7 @@ public class PowerOperationTest {
 
     }
     @Test
-    void testingResultLargeIntegerInputNumberForPowerOperation() {
+    public  void testingResultLargeIntegerInputNumberForPowerOperation() {
 
 
 
@@ -91,7 +92,7 @@ public class PowerOperationTest {
 
     }
     @Test
-    void testingResultForFloatIntegerInputNumberForPowerOperation() {
+    public void testingResultForFloatIntegerInputNumberForPowerOperation() {
 
 
         double testResult = testCase73.getResult();
@@ -102,7 +103,7 @@ public class PowerOperationTest {
 
 
     @Test
-    void testingResultForFirstLargeInputInPowerOperation() {
+    public void testingResultForFirstLargeInputInPowerOperation() {
 
         Throwable exception = assertThrows(
                 RuntimeException.class, () -> {
@@ -115,7 +116,7 @@ public class PowerOperationTest {
 
     }
     @Test
-    void testingResultForSecondLargeInputInPowerOperation() {
+    public  void testingResultForSecondLargeInputInPowerOperation() {
 
         Throwable exception = assertThrows(
                 RuntimeException.class, () -> {

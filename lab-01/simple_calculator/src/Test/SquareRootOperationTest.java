@@ -3,11 +3,12 @@ package Test;
 import Main.SquareRootOperation;
 import Main.SquareRootOperation;
 import Main.SubtractionOperation;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SquareRootOperationTest {
+public class SquareRootOperationTest {
 
     SquareRootOperation testCase76 = new SquareRootOperation(1);
 
@@ -22,7 +23,7 @@ class SquareRootOperationTest {
 
 
     @Test
-    void testingInputNumbersAreNotNullForSquareRootOperation() {
+    public void testingInputNumbersAreNotNullForSquareRootOperation() {
 
         double testResult1 = testCase76.getNum1();
 
@@ -34,7 +35,7 @@ class SquareRootOperationTest {
 
     }
     @Test
-    void testingResultForPositiveIntegerInputNumberForSquareRootOperation() {
+    public  void testingResultForPositiveIntegerInputNumberForSquareRootOperation() {
 
 
         double testResult = testCase77.getResult();
@@ -43,7 +44,7 @@ class SquareRootOperationTest {
 
     }
     @Test
-    void testingResultForNegativeIntegerInputNumberForSquareRootOperation() {
+    public  void testingResultForNegativeIntegerInputNumberForSquareRootOperation() {
 
 
         double testResult = testCase78.getResult();
@@ -52,7 +53,7 @@ class SquareRootOperationTest {
 
     }
     @Test
-    void testingResultForZeroIntegerInputNumberForSquareRootOperation() {
+    public  void testingResultForZeroIntegerInputNumberForSquareRootOperation() {
 
 
 
@@ -68,7 +69,7 @@ class SquareRootOperationTest {
 
     }
     @Test
-    void testingResultLargeIntegerInputNumberForSquareRootOperation() {
+    public void testingResultLargeIntegerInputNumberForSquareRootOperation() {
 
 
 

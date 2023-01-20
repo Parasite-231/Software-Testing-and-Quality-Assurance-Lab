@@ -3,7 +3,8 @@ package Test;
 import Main.TrigonometricTanOperation;
 import Main.TrigonometricSineOperation;
 import Main.TrigonometricTanOperation;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -30,7 +31,7 @@ public class TrigonometricTanOperationTest {
 
 
     @Test
-    void testingInputNumbersAreNotNullForTrigonometricTanOperation() {
+    public void testingInputNumbersAreNotNullForTrigonometricTanOperation() {
 
 
         double testResult1 = testCase93.getNum1();
@@ -43,7 +44,7 @@ public class TrigonometricTanOperationTest {
 
     }
     @Test
-    void testingResultForPositiveIntegerInputNumberForTrigonometricTanOperation() {
+    public void testingResultForPositiveIntegerInputNumberForTrigonometricTanOperation() {
 
 
         double testResult = testCase94.getResult();
@@ -52,7 +53,7 @@ public class TrigonometricTanOperationTest {
 
     }
     @Test
-    void testingResultForFloatIntegerInputNumberForTrigonometricTanOperation() {
+    public  void testingResultForFloatIntegerInputNumberForTrigonometricTanOperation() {
 
         double testResult = testCase95.getResult();
         assertEquals(-1,testResult);
@@ -60,7 +61,7 @@ public class TrigonometricTanOperationTest {
 
     }
     @Test
-    void testingResultForNegativeIntegerInputNumberForTrigonometricTanOperation() {
+    public void testingResultForNegativeIntegerInputNumberForTrigonometricTanOperation() {
 
 
         double testResult = testCase96.getResult();
@@ -69,7 +70,7 @@ public class TrigonometricTanOperationTest {
 
     }
     @Test
-    void testingResultForNegativeLargeIntegerInputNumberForTrigonometricTanOperation() {
+    public  void testingResultForNegativeLargeIntegerInputNumberForTrigonometricTanOperation() {
 
 
 
@@ -85,7 +86,7 @@ public class TrigonometricTanOperationTest {
 
     }
     @Test
-    void testingResultForPositiveLargeIntegerInputNumberForTrigonometricTanOperation() {
+    public  void testingResultForPositiveLargeIntegerInputNumberForTrigonometricTanOperation() {
 
 
         Throwable exception = assertThrows(
@@ -100,7 +101,7 @@ public class TrigonometricTanOperationTest {
 
     }
     @Test
-    void testingResultForUndefinedScenarioForTrigonometricTanOperation() {
+    public  void testingResultForUndefinedScenarioForTrigonometricTanOperation() {
 
 
 

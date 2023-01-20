@@ -1,7 +1,9 @@
 package Test;
 
 import Main.PrimeNumberGenerationOperation;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -10,7 +12,7 @@ import java.util.ArrayList;
 import static java.sql.Types.NULL;
 import static org.junit.jupiter.api.Assertions.*;
 
-class PrimeNumberGenerationOperationTest {
+public class PrimeNumberGenerationOperationTest {
 
     PrimeNumberGenerationOperation testCase106 = new PrimeNumberGenerationOperation();
     PrimeNumberGenerationOperation testCase107 = new PrimeNumberGenerationOperation();
@@ -22,7 +24,7 @@ class PrimeNumberGenerationOperationTest {
 
 
     @Test
-    void testingCaseForFirstNPositivePrimes() {
+    public void testingCaseForFirstNPositivePrimes() {
         ArrayList<Integer> list;
         list = new ArrayList<Integer>(Arrays.asList(2,3,5,7,11));
         assertEquals(list,testCase106.firstNPrimes(5));
@@ -33,7 +35,7 @@ class PrimeNumberGenerationOperationTest {
 
 
     @Test
-    void testingCaseOneForIncorrectArrayLengthInputForPrimeNumberGenerationChecking() {
+    public void testingCaseOneForIncorrectArrayLengthInputForPrimeNumberGenerationChecking() {
 
         Throwable exception = assertThrows(
                 RuntimeException.class, () -> {
@@ -48,7 +50,7 @@ class PrimeNumberGenerationOperationTest {
 
     }
     @Test
-    void testingCaseTwoForIncorrectArrayLengthInputForPrimeNumberGenerationChecking() {
+    public  void testingCaseTwoForIncorrectArrayLengthInputForPrimeNumberGenerationChecking() {
 
         Throwable exception = assertThrows(
                 RuntimeException.class, () -> {
@@ -63,7 +65,7 @@ class PrimeNumberGenerationOperationTest {
 
     }
     @Test
-    void testingCaseThreeForIncorrectArrayLengthInputForPrimeNumberGenerationChecking() {
+    public  void testingCaseThreeForIncorrectArrayLengthInputForPrimeNumberGenerationChecking() {
 
         Throwable exception = assertThrows(
                 RuntimeException.class, () -> {
@@ -78,7 +80,7 @@ class PrimeNumberGenerationOperationTest {
 
     }
     @Test
-    void testingCaseFourForIncorrectArrayLengthInputForPrimeNumberGenerationChecking() {
+    public  void testingCaseFourForIncorrectArrayLengthInputForPrimeNumberGenerationChecking() {
 
         Throwable exception = assertThrows(
                 RuntimeException.class, () -> {

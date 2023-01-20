@@ -3,7 +3,9 @@ package Test;
 import Main.ExponentialOperation;
 import Main.ExponentialOperation;
 import Main.LogOperation;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -27,7 +29,7 @@ public class ExponentialOperationTest {
 
 
     @Test
-    void testingForPositiveExponentPowerInput() {
+    public void testingForPositiveExponentPowerInput() {
 
 
         double testResult = testCase24.getNum1();
@@ -37,7 +39,7 @@ public class ExponentialOperationTest {
     }
 
     @Test
-    void testingForPositiveExponentialOperation() {
+    public void testingForPositiveExponentialOperation() {
 
 
         double testResult = testCase24.getNum1();
@@ -47,7 +49,7 @@ public class ExponentialOperationTest {
     }
 
     @Test
-    void testingForNegativeExponentPowerInput() {
+    public void testingForNegativeExponentPowerInput() {
 
 
         double testResult = testCase25.getNum1();
@@ -57,7 +59,7 @@ public class ExponentialOperationTest {
     }
 
     @Test
-    void testingForNegativeExponentialOperation() {
+    public void testingForNegativeExponentialOperation() {
 
 
         double testResult = testCase25.getNum1();
@@ -66,7 +68,7 @@ public class ExponentialOperationTest {
 
     }
     @Test
-    void testingForPositiveFloatExponentPowerInput() {
+    public void testingForPositiveFloatExponentPowerInput() {
 
 
         double testResult = testCase26.getNum1();
@@ -76,7 +78,7 @@ public class ExponentialOperationTest {
     }
 
     @Test
-    void testingForPositiveFloatExponentialOperation() {
+    public void testingForPositiveFloatExponentialOperation() {
 
 
         double testResult = testCase26.getNum1();
@@ -86,7 +88,7 @@ public class ExponentialOperationTest {
     }
 
     @Test
-    void testingForNegativeFloatExponentPowerInput() {
+    public void testingForNegativeFloatExponentPowerInput() {
 
 
         double testResult = testCase27.getNum1();
@@ -96,7 +98,7 @@ public class ExponentialOperationTest {
     }
 
     @Test
-    void testingForNegativeFloatExponentialOperation() {
+    public void testingForNegativeFloatExponentialOperation() {
 
 
         double testResult = testCase27.getNum1();
@@ -106,7 +108,7 @@ public class ExponentialOperationTest {
     }
 
     @Test
-    void testingForLargePositiveExponentPowerInput() {
+    public void testingForLargePositiveExponentPowerInput() {
 
         double testResult = testCase28.getNum1();
         assertNotNull(testResult);
@@ -115,7 +117,7 @@ public class ExponentialOperationTest {
     }
 
     @Test
-    void testingLargePositiveExponentialOperation() {
+    public void testingLargePositiveExponentialOperation() {
 
 
 
@@ -133,7 +135,7 @@ public class ExponentialOperationTest {
     }
 
     @Test
-    void testingForLargeNegativeExponentPowerInput() {
+    public void testingForLargeNegativeExponentPowerInput() {
 
         double testResult = testCase29.getNum1();
         assertNotNull(testResult);
@@ -142,7 +144,7 @@ public class ExponentialOperationTest {
     }
 
     @Test
-    void testingLargeNegativeExponentialOperation() {
+    public void testingLargeNegativeExponentialOperation() {
 
 
 

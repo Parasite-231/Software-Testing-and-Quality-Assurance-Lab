@@ -3,11 +3,12 @@ package Test;
 import Main.ModuloOperation;
 import Main.ModuloOperation;
 import Main.MultiplicationOperation;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ModuloOperationTest {
+public class ModuloOperationTest {
 
 
     ModuloOperation testCase52 = new ModuloOperation(4,2);
@@ -32,7 +33,7 @@ class ModuloOperationTest {
 
 
     @Test
-    void testingInputNumbersAreNotNullForModuloOperation() {
+    public void testingInputNumbersAreNotNullForModuloOperation() {
 
 
         double testResult1 = testCase52.getNum1();
@@ -45,7 +46,7 @@ class ModuloOperationTest {
 
     }
     @Test
-    void testingResultForFloatIntegerInputNumbersForModuloOperation() {
+    public  void testingResultForFloatIntegerInputNumbersForModuloOperation() {
 
 
         double testResult = testCase53.getResult();
@@ -54,7 +55,7 @@ class ModuloOperationTest {
 
     }
     @Test
-    void testingResultForPositiveIntegerInputNumbersForModuloOperation() {
+    public  void testingResultForPositiveIntegerInputNumbersForModuloOperation() {
 
 
         double testResult = testCase58.getResult();
@@ -63,7 +64,7 @@ class ModuloOperationTest {
 
     }
     @Test
-    void testingResultForNegativeIntegerInputNumbersForModuloOperation() {
+    public void testingResultForNegativeIntegerInputNumbersForModuloOperation() {
 
 
         double testResult = testCase54.getResult();
@@ -72,7 +73,7 @@ class ModuloOperationTest {
 
     }
     @Test
-    void testingResultForLargeIntegerInputInModuloOperation() {
+    public void testingResultForLargeIntegerInputInModuloOperation() {
 
         Throwable exception = assertThrows(
                 RuntimeException.class, () -> {
@@ -87,7 +88,7 @@ class ModuloOperationTest {
 
 
     @Test
-    void testingResultForLargeFirstIntegerInputInModuloOperation() {
+    public void testingResultForLargeFirstIntegerInputInModuloOperation() {
 
         Throwable exception = assertThrows(
                 RuntimeException.class, () -> {
@@ -100,7 +101,7 @@ class ModuloOperationTest {
 
     }
     @Test
-    void testingResultForLargeSecondIntegerInputInModuloOperation() {
+    public  void testingResultForLargeSecondIntegerInputInModuloOperation() {
 
         Throwable exception = assertThrows(
                 RuntimeException.class, () -> {
@@ -114,7 +115,7 @@ class ModuloOperationTest {
     }
 
     @Test
-    void testingResultForZeroIntegerInDenominatorInputInModuloOperation() {
+    public void testingResultForZeroIntegerInDenominatorInputInModuloOperation() {
 
         Throwable exception = assertThrows(
                 ArithmeticException.class, () -> {

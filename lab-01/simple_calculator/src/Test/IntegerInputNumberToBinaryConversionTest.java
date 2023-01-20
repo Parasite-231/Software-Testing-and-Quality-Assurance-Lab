@@ -1,11 +1,12 @@
 package Test;
 
 import Main.IntegerInputNumberToBinaryConversion;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class IntegerInputNumberToBinaryConversionTest {
+public class IntegerInputNumberToBinaryConversionTest {
 
     IntegerInputNumberToBinaryConversion testCase36 = new IntegerInputNumberToBinaryConversion(4);
     IntegerInputNumberToBinaryConversion testCase37 = new IntegerInputNumberToBinaryConversion(9);
@@ -20,7 +21,7 @@ class IntegerInputNumberToBinaryConversionTest {
 
 
     @Test
-    void testingIntegerInputNumberForBinaryConversion() {
+    public void testingIntegerInputNumberForBinaryConversion() {
 
         double testResult = testCase36.getNum1();
         assertNotNull(testResult);
@@ -31,7 +32,7 @@ class IntegerInputNumberToBinaryConversionTest {
 
 
     @Test
-    void testingResultForPositiveIntegerToBinaryConversion() {
+    public  void testingResultForPositiveIntegerToBinaryConversion() {
 
         String testResult = testCase37.getResult();
         assertEquals("1001",testResult);
@@ -40,7 +41,7 @@ class IntegerInputNumberToBinaryConversionTest {
 
 
     @Test
-    void testingResultForNegativeIntegerToBinaryConversion() {
+    public  void testingResultForNegativeIntegerToBinaryConversion() {
 
 
         Throwable exception = assertThrows(
@@ -56,7 +57,7 @@ class IntegerInputNumberToBinaryConversionTest {
     }
 
     @Test
-    void testingResultForLargeIntegerToBinaryConversion() {
+    public void testingResultForLargeIntegerToBinaryConversion() {
 
 
 
@@ -74,7 +75,7 @@ class IntegerInputNumberToBinaryConversionTest {
     }
 
     @Test
-    void testingResultForFloatInputNumberInIntegerToBinaryConversion() {
+    public  void testingResultForFloatInputNumberInIntegerToBinaryConversion() {
 
 
 

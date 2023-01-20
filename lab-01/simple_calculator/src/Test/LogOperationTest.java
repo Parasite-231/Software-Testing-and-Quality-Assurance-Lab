@@ -3,7 +3,8 @@ package Test;
 import Main.LogOperation;
 import Main.LogOperation;
 import Main.SquareRootOperation;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -29,7 +30,7 @@ public class LogOperationTest {
 
 
     @Test
-    void testingInputNumberIsNotNullForLogOperation() {
+    public void testingInputNumberIsNotNullForLogOperation() {
 
         double testResult = testCase46.getNum1();
         assertNotNull(testResult);
@@ -40,7 +41,7 @@ public class LogOperationTest {
 
 
     @Test
-    void testingResultForZeroInputInLogOperation() {
+    public  void testingResultForZeroInputInLogOperation() {
 
         Throwable exception = assertThrows(
                 RuntimeException.class, () -> {
@@ -54,7 +55,7 @@ public class LogOperationTest {
     }
 
     @Test
-    void testingResultForNegativeIntegerInputInLogOperation() {
+    public void testingResultForNegativeIntegerInputInLogOperation() {
 
         Throwable exception = assertThrows(
                 RuntimeException.class, () -> {
@@ -69,7 +70,7 @@ public class LogOperationTest {
 
 
     @Test
-    void testingResultForPositiveIntegerInputInLogOperation() {
+    public  void testingResultForPositiveIntegerInputInLogOperation() {
 
 
         double testResult = testCase49.getResult();
@@ -79,7 +80,7 @@ public class LogOperationTest {
     }
 
     @Test
-    void testingResultForLargeIntegerToBinaryConversion() {
+    public void testingResultForLargeIntegerToBinaryConversion() {
 
 
 
@@ -96,7 +97,7 @@ public class LogOperationTest {
 
     }
     @Test
-    void testingResultForFractionalIntegerInputInLogOperation() {
+    public  void testingResultForFractionalIntegerInputInLogOperation() {
 
 
         double testResult = testCase51.getResult();

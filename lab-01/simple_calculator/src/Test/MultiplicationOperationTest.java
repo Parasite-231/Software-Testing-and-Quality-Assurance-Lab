@@ -3,11 +3,12 @@ package Test;
 import Main.AdditionOperation;
 import Main.MultiplicationOperation;
 import Main.MultiplicationOperation;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MultiplicationOperationTest {
+public class MultiplicationOperationTest {
 
 
     MultiplicationOperation testCase60 = new MultiplicationOperation(1,2);
@@ -28,7 +29,7 @@ class MultiplicationOperationTest {
 
 
     @Test
-    void testingInputNumbersAreNotNullForMultiplicationOperation() {
+    public void testingInputNumbersAreNotNullForMultiplicationOperation() {
 
 
         double testResult1 = testCase60.getNum1();
@@ -41,7 +42,7 @@ class MultiplicationOperationTest {
 
     }
     @Test
-    void testingResultForPositiveIntegerInputNumberForMultiplicationOperation() {
+    public void testingResultForPositiveIntegerInputNumberForMultiplicationOperation() {
 
 
         double testResult = testCase61.getResult();
@@ -50,7 +51,7 @@ class MultiplicationOperationTest {
 
     }
     @Test
-    void testingResultForNegativeIntegerInputNumberForMultiplicationOperation() {
+    public void testingResultForNegativeIntegerInputNumberForMultiplicationOperation() {
 
 
         double testResult = testCase62.getResult();
@@ -59,7 +60,7 @@ class MultiplicationOperationTest {
 
     }
     @Test
-    void testingResultForZeroIntegerInputNumberForMultiplicationOperation() {
+    public  void testingResultForZeroIntegerInputNumberForMultiplicationOperation() {
 
 
         double testResult = testCase63.getResult();
@@ -68,7 +69,7 @@ class MultiplicationOperationTest {
 
     }
     @Test
-    void testingResultForFloatIntegerInputNumberForMultiplicationOperation() {
+    public void testingResultForFloatIntegerInputNumberForMultiplicationOperation() {
 
 
         double testResult = testCase65.getResult();
@@ -79,7 +80,7 @@ class MultiplicationOperationTest {
 
 
     @Test
-    void testingResultForLargeInputInMultiplicationOperation() {
+    public void testingResultForLargeInputInMultiplicationOperation() {
 
         Throwable exception = assertThrows(
                 RuntimeException.class, () -> {
@@ -92,7 +93,7 @@ class MultiplicationOperationTest {
 
     }
     @Test
-    void testingResultForSecondLargeInputInMultiplicationOperation() {
+    public void testingResultForSecondLargeInputInMultiplicationOperation() {
 
         Throwable exception = assertThrows(
                 RuntimeException.class, () -> {
@@ -105,7 +106,7 @@ class MultiplicationOperationTest {
 
     }
     @Test
-    void testingResultForFirstLargeInputInMultiplicationOperation() {
+    public  void testingResultForFirstLargeInputInMultiplicationOperation() {
 
         Throwable exception = assertThrows(
                 RuntimeException.class, () -> {

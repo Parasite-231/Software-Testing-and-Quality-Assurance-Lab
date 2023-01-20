@@ -1,12 +1,13 @@
 package Test;
 
 import Main.DivisionOperation;
-import Main.DivisionOperation;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+import org.junit.Test;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DivisionOperationTest {
+public class DivisionOperationTest {
 
     DivisionOperation testCase15 = new DivisionOperation(4,2);
     DivisionOperation testCase16 = new DivisionOperation(4.00,2.00);
@@ -29,7 +30,7 @@ class DivisionOperationTest {
 
 
     @Test
-    void testingForFirstIntegerInputNumber() {
+    public void testingForFirstIntegerInputNumber() {
 
 
         double testResult = testCase15.getNum1();
@@ -39,7 +40,7 @@ class DivisionOperationTest {
     }
 
     @Test
-    void testingForSecondIntegerInputNumber() {
+    public void testingForSecondIntegerInputNumber() {
 
 
         double testResult = testCase15.getNum2();
@@ -49,7 +50,7 @@ class DivisionOperationTest {
     }
 
     @Test
-    void testingResultForIntegerDivisionOperation() {
+    public  void testingResultForIntegerDivisionOperation() {
 
         double testResult = testCase15.getResult();
         assertEquals(2,testResult);
@@ -57,7 +58,7 @@ class DivisionOperationTest {
     }
 
     @Test
-    void testingForFirstFloatInputNumber() {
+    public void testingForFirstFloatInputNumber() {
 
         double testResult = testCase16.getNum1();
         assertNotNull(testResult);
@@ -65,7 +66,7 @@ class DivisionOperationTest {
 
     }
     @Test
-    void testingForSecondFloatInputNumber() {
+    public void testingForSecondFloatInputNumber() {
 
 
         double testResult = testCase16.getNum1();
@@ -74,7 +75,7 @@ class DivisionOperationTest {
 
     }
     @Test
-    void testingResultForFloatDivisionOperation() {
+    public void testingResultForFloatDivisionOperation() {
 
         double testResult = testCase16.getResult();
         assertEquals(5,testResult);
@@ -82,7 +83,7 @@ class DivisionOperationTest {
     }
 
     @Test
-    void testingForFirstNegativeInputNumber() {
+    public void testingForFirstNegativeInputNumber() {
 
 
         double testResult = testCase17.getNum1();
@@ -91,7 +92,7 @@ class DivisionOperationTest {
 
     }
     @Test
-    void testingForSecondNegativeInputNumber() {
+    public void testingForSecondNegativeInputNumber() {
 
 
         double testResult = testCase17.getNum1();
@@ -100,7 +101,7 @@ class DivisionOperationTest {
 
     }
     @Test
-    void testingResultForNegativeDivisionOperation() {
+    public void testingResultForNegativeDivisionOperation() {
 
         double testResult = testCase17.getResult();
         assertEquals(5,testResult);
@@ -108,7 +109,7 @@ class DivisionOperationTest {
     }
 
     @Test
-    void testingForFirstLargeInputNumber() {
+    public void testingForFirstLargeInputNumber() {
 
 
         double testResult = testCase18.getNum1();
@@ -117,7 +118,7 @@ class DivisionOperationTest {
 
     }
     @Test
-    void testingForSecondLargeInputNumber() {
+    public void testingForSecondLargeInputNumber() {
 
 
         double testResult = testCase18.getNum1();
@@ -126,7 +127,7 @@ class DivisionOperationTest {
 
     }
     @Test
-    void testingResultForLargeDivisionOperation() {
+    public void testingResultForLargeDivisionOperation() {
 
 
         Throwable exception = assertThrows(
@@ -141,7 +142,7 @@ class DivisionOperationTest {
     }
 
     @Test
-    void testingForFirstNegativeLargeInputNumber() {
+    public void testingForFirstNegativeLargeInputNumber() {
 
 
         double testResult = testCase19.getNum1();
@@ -150,7 +151,7 @@ class DivisionOperationTest {
 
     }
     @Test
-    void testingForNegativeSecondLargeInputNumber() {
+    public void testingForNegativeSecondLargeInputNumber() {
 
 
         double testResult = testCase19.getNum1();
@@ -159,7 +160,7 @@ class DivisionOperationTest {
 
     }
     @Test
-    void testingResultForNegativeLargeDivisionOperation() {
+    public void testingResultForNegativeLargeDivisionOperation() {
 
 
         Throwable exception = assertThrows(
@@ -176,7 +177,7 @@ class DivisionOperationTest {
 
 
     @Test
-    void testingForPositiveSmallInputNumber() {
+    public void testingForPositiveSmallInputNumber() {
 
 
         double testResult = testCase20.getNum1();
@@ -185,7 +186,7 @@ class DivisionOperationTest {
 
     }
     @Test
-    void testingForNegativeLargeInputNumber() {
+    public void testingForNegativeLargeInputNumber() {
 
         double testResult = testCase20.getNum1();
         assertNotNull(testResult);
@@ -193,7 +194,7 @@ class DivisionOperationTest {
 
     }
     @Test
-    void testingResultForSmallPositiveAndLargeNegativeNumberDivisionOperation() {
+    public void testingResultForSmallPositiveAndLargeNegativeNumberDivisionOperation() {
 
 
         Throwable exception = assertThrows(
@@ -208,7 +209,7 @@ class DivisionOperationTest {
     }
 
     @Test
-    void testingForLargeNegativeInputNumber() {
+    public void testingForLargeNegativeInputNumber() {
 
         double testResult = testCase21.getNum1();
         assertNotNull(testResult);
@@ -216,7 +217,7 @@ class DivisionOperationTest {
 
     }
     @Test
-    void testingForSmallPositiveInputNumber() {
+    public void testingForSmallPositiveInputNumber() {
 
         double testResult = testCase21.getNum1();
         assertNotNull(testResult);
@@ -224,7 +225,7 @@ class DivisionOperationTest {
 
     }
     @Test
-    void testingResultForLargeNegativeAndSmallPositiveNumberDivisionOperation() {
+    public void testingResultForLargeNegativeAndSmallPositiveNumberDivisionOperation() {
 
 
         Throwable exception = assertThrows(
@@ -240,7 +241,7 @@ class DivisionOperationTest {
 
 
     @Test
-    void testingForFirstNonZeroInputNumber() {
+    public void testingForFirstNonZeroInputNumber() {
 
 
         double testResult = testCase22.getNum1();
@@ -249,7 +250,7 @@ class DivisionOperationTest {
 
     }
     @Test
-    void testingForSecondZeroInputNumber() {
+    public void testingForSecondZeroInputNumber() {
 
 
         double testResult = testCase22.getNum1();
@@ -258,7 +259,7 @@ class DivisionOperationTest {
 
     }
     @Test
-    void testingResultForDivisibleByZeroDivisionOperation() {
+    public void testingResultForDivisibleByZeroDivisionOperation() {
 
 
         Throwable exception = assertThrows(
@@ -274,7 +275,7 @@ class DivisionOperationTest {
 
 
     @Test
-    void testingForFirstZeroInputNumber() {
+    public void testingForFirstZeroInputNumber() {
 
 
         double testResult = testCase23.getNum1();
@@ -284,7 +285,7 @@ class DivisionOperationTest {
     }
 
     @Test
-    void testingResultForZeroByZeroDivisionOperation() {
+    public  void testingResultForZeroByZeroDivisionOperation() {
 
 
         Throwable exception = assertThrows(

@@ -2,7 +2,8 @@ package Test;
 
 import Main.FibonacciNumberCheckingOperation;
 import Main.PrimeNumberGenerationOperation;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,7 +26,7 @@ public class FibonacciNumberCheckingOperationTest {
 
 
     @Test
-    void testingNSequencePositiveFibonacciNumbers() {
+    public void testingNSequencePositiveFibonacciNumbers() {
         FibonacciNumberCheckingOperation nFibonacci1 = new FibonacciNumberCheckingOperation();
         ArrayList<Integer> list;
         list = new ArrayList<Integer>(Arrays.asList(2 ,8, 5, 1 ,13 ));
@@ -36,7 +37,7 @@ public class FibonacciNumberCheckingOperationTest {
     }
 
     @Test
-    void testingNSequenceNegativeFibonacciNumbers() {
+    public void testingNSequenceNegativeFibonacciNumbers() {
         FibonacciNumberCheckingOperation nFibonacci1 = new FibonacciNumberCheckingOperation();
         ArrayList<Integer> list;
         list = new ArrayList<Integer>(Arrays.asList(1,2));
@@ -46,7 +47,7 @@ public class FibonacciNumberCheckingOperationTest {
 
     }
     @Test
-    void testingForNullArrayLengthInputForFibonacciSequence() {
+    public void testingForNullArrayLengthInputForFibonacciSequence() {
 
 
 
@@ -64,7 +65,7 @@ public class FibonacciNumberCheckingOperationTest {
     }
 
     @Test
-    void testingForLargeArrayLengthInputForFibonacciSequence() {
+    public  void testingForLargeArrayLengthInputForFibonacciSequence() {
 
 
 
@@ -80,7 +81,7 @@ public class FibonacciNumberCheckingOperationTest {
 
     }
     @Test
-    void testingForNegativeArrayLengthInputForFibonacciSequence() {
+    public   void testingForNegativeArrayLengthInputForFibonacciSequence() {
 
 
 
@@ -97,7 +98,7 @@ public class FibonacciNumberCheckingOperationTest {
 
     }
     @Test
-    void testingForFractionalArrayLengthInputForFibonacciSequence() {
+    public  void testingForFractionalArrayLengthInputForFibonacciSequence() {
 
 
 

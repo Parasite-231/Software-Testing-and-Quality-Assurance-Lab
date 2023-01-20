@@ -2,7 +2,8 @@ package Test;
 
 import Main.TrigonometricCosOperation;
 import Main.TrigonometricCosOperation;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -25,7 +26,7 @@ public class TrigonometricCosOperationTest {
 
 
     @Test
-    void testingInputNumbersAreNotNullForTrigonometricCosOperation() {
+    public  void testingInputNumbersAreNotNullForTrigonometricCosOperation() {
 
         System.out.println("Running test -> 1 " );
         System.out.println("...Testing first input number for addition operation ");
@@ -39,7 +40,7 @@ public class TrigonometricCosOperationTest {
 
     }
     @Test
-    void testingResultForPositiveIntegerInputNumberForTrigonometricCosOperation() {
+    public void testingResultForPositiveIntegerInputNumberForTrigonometricCosOperation() {
 
         double testResult = testCase88.getResult();
         assertEquals(-1,testResult);
@@ -47,7 +48,7 @@ public class TrigonometricCosOperationTest {
 
     }
     @Test
-    void testingResultForFloatIntegerInputNumberForTrigonometricCosOperation() {
+    public void testingResultForFloatIntegerInputNumberForTrigonometricCosOperation() {
 
 
         double testResult = testCase89.getResult();
@@ -56,7 +57,7 @@ public class TrigonometricCosOperationTest {
 
     }
     @Test
-    void testingResultForNegativeIntegerInputNumberForTrigonometricCosOperation() {
+    public void testingResultForNegativeIntegerInputNumberForTrigonometricCosOperation() {
 
 
         double testResult = testCase90.getResult();
@@ -65,7 +66,7 @@ public class TrigonometricCosOperationTest {
 
     }
     @Test
-    void testingResultForNegativeLargeIntegerInputNumberForTrigonometricCosOperation() {
+    public void testingResultForNegativeLargeIntegerInputNumberForTrigonometricCosOperation() {
 
 
 
@@ -81,7 +82,7 @@ public class TrigonometricCosOperationTest {
 
     }
     @Test
-    void testingResultForPositiveLargeIntegerInputNumberForTrigonometricCosOperation() {
+    public void testingResultForPositiveLargeIntegerInputNumberForTrigonometricCosOperation() {
 
 
 

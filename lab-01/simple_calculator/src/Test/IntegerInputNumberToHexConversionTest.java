@@ -2,7 +2,8 @@ package Test;
 
 import Main.IntegerInputNumberToHexConversion;
 import Main.IntegerInputNumberToHexConversion;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -23,7 +24,7 @@ public class IntegerInputNumberToHexConversionTest {
 
 
     @Test
-    void testingIntegerInputNumberForBinaryConversion() {
+    public  void testingIntegerInputNumberForBinaryConversion() {
 
 
         double testResult = testCase41.getNum1();
@@ -35,7 +36,7 @@ public class IntegerInputNumberToHexConversionTest {
 
 
     @Test
-    void testingResultForPositiveIntegerToBinaryConversion() {
+    public void testingResultForPositiveIntegerToBinaryConversion() {
 
         String testResult = testCase42.getResult();
         assertEquals("9",testResult);
@@ -44,7 +45,7 @@ public class IntegerInputNumberToHexConversionTest {
 
 
     @Test
-    void testingResultForNegativeIntegerToBinaryConversion() {
+    public  void testingResultForNegativeIntegerToBinaryConversion() {
 
         System.out.println("Running test -> 2 " );
 
@@ -63,7 +64,7 @@ public class IntegerInputNumberToHexConversionTest {
     }
 
     @Test
-    void testingResultForLargeIntegerToBinaryConversion() {
+    public  void testingResultForLargeIntegerToBinaryConversion() {
 
 
 
@@ -80,7 +81,7 @@ public class IntegerInputNumberToHexConversionTest {
     }
 
     @Test
-    void testingResultForFloatInputNumberInIntegerToBinaryConversion() {
+    public void testingResultForFloatInputNumberInIntegerToBinaryConversion() {
 
 
         Throwable exception = assertThrows(
