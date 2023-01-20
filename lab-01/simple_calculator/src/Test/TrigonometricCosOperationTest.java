@@ -3,7 +3,7 @@ package Test;
 import Main.TrigonometricCosOperation;
 import Main.TrigonometricCosOperation;
 //import org.junit.jupiter.api.Test;
-import org.junit.Test;
+import org.junit.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -22,14 +22,29 @@ public class TrigonometricCosOperationTest {
 
 
 
+    @BeforeClass
+    public static void testExecutionBeforeExecutingAllTestsCases(){
+        System.out.println("...All Test execution - started");
+    }
+    @AfterClass
+    public static void testExecutionAfterExecutingAllTestsCases(){
+        System.out.println("...All Test execution - completed");
+    }
 
+    @Before
+    public void testExecutionBeforeExecutingEachTestsCases(){
+        System.out.println("...Test Running ");
+    }
+    @After
+    public void testExecutionAfterExecutingEachTestsCases(){
+        System.out.println("---Test Executed");
+    }
 
 
     @Test
     public  void testingInputNumbersAreNotNullForTrigonometricCosOperation() {
 
-        System.out.println("Running test -> 1 " );
-        System.out.println("...Testing first input number for addition operation ");
+
         double testResult1 = testCase87.getNum1();
 
 

@@ -1,8 +1,11 @@
 package Main;
 
+import java.text.DecimalFormat;
+
 public class DivisionOperation {
     private double num1;
     private double num2;
+    private static final DecimalFormat df = new DecimalFormat("0.0000");
 
     public DivisionOperation(double num1, double num2){
 
@@ -41,7 +44,7 @@ public class DivisionOperation {
             throw new ArithmeticException("Undefined Result !");
         }
 
-        else return getNum1()/getNum2();
+        else return Double.parseDouble(df.format(getNum1()/getNum2()));
 
     }
 

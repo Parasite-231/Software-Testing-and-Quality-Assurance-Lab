@@ -2,7 +2,7 @@ package Test;
 
 import Main.PrimeNumberGenerationOperation;
 //import org.junit.jupiter.api.Test;
-import org.junit.Test;
+import org.junit.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,7 +21,23 @@ public class PrimeNumberGenerationOperationTest {
     PrimeNumberGenerationOperation testCase110 = new PrimeNumberGenerationOperation();
 
 
+    @BeforeClass
+    public static void testExecutionBeforeExecutingAllTestsCases(){
+        System.out.println("...All Test execution - started");
+    }
+    @AfterClass
+    public static void testExecutionAfterExecutingAllTestsCases(){
+        System.out.println("...All Test execution - completed");
+    }
 
+    @Before
+    public void testExecutionBeforeExecutingEachTestsCases(){
+        System.out.println("...Test Running ");
+    }
+    @After
+    public void testExecutionAfterExecutingEachTestsCases(){
+        System.out.println("---Test Executed");
+    }
 
     @Test
     public void testingCaseForFirstNPositivePrimes() {

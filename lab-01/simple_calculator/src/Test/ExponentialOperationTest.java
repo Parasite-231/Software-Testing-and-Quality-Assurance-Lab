@@ -5,7 +5,7 @@ import Main.ExponentialOperation;
 import Main.LogOperation;
 //import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
+import org.junit.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -24,7 +24,23 @@ public class ExponentialOperationTest {
 
 
 
+    @BeforeClass
+    public static void testExecutionBeforeExecutingAllTestsCases(){
+        System.out.println("...All Test execution - started");
+    }
+    @AfterClass
+    public static void testExecutionAfterExecutingAllTestsCases(){
+        System.out.println("...All Test execution - completed");
+    }
 
+    @Before
+    public void testExecutionBeforeExecutingEachTestsCases(){
+        System.out.println("...Test Running ");
+    }
+    @After
+    public void testExecutionAfterExecutingEachTestsCases(){
+        System.out.println("---Test Executed");
+    }
 
 
 
@@ -63,7 +79,7 @@ public class ExponentialOperationTest {
 
 
         double testResult = testCase25.getNum1();
-        assertEquals(0,testResult);
+        assertEquals(-1.0,testResult);
 
 
     }
@@ -82,7 +98,7 @@ public class ExponentialOperationTest {
 
 
         double testResult = testCase26.getNum1();
-        assertEquals(0,testResult);
+        assertEquals(2.1,testResult);
 
 
     }
@@ -102,7 +118,7 @@ public class ExponentialOperationTest {
 
 
         double testResult = testCase27.getNum1();
-        assertEquals(0,testResult);
+        assertEquals(-1.2,testResult);
 
 
     }

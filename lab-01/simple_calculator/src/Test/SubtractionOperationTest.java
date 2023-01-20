@@ -4,7 +4,7 @@ import Main.SubtractionOperation;
 import Main.SubtractionOperation;
 //import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
+import org.junit.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -24,7 +24,23 @@ public class SubtractionOperationTest {
     SubtractionOperation testCase14 = new SubtractionOperation(-1000000001,2);
 
 
+    @BeforeClass
+    public static void testExecutionBeforeExecutingAllTestsCases(){
+        System.out.println("...All Test execution - started");
+    }
+    @AfterClass
+    public static void testExecutionAfterExecutingAllTestsCases(){
+        System.out.println("...All Test execution - completed");
+    }
 
+    @Before
+    public void testExecutionBeforeExecutingEachTestsCases(){
+        System.out.println("...Test Running ");
+    }
+    @After
+    public void testExecutionAfterExecutingEachTestsCases(){
+        System.out.println("---Test Executed");
+    }
 
     @Test
     public void testingForFirstIntegerInputNumber() {
@@ -50,7 +66,7 @@ public class SubtractionOperationTest {
     public void testingResultForIntegerSubtractionOperation() {
 
         double testResult = testCase8.getResult();
-        assertEquals(5,testResult);
+        assertEquals(-1.0,testResult);
 
     }
 
@@ -76,7 +92,7 @@ public class SubtractionOperationTest {
     public void testingResultForFloatSubtractionOperation() {
 
         double testResult = testCase9.getResult();
-        assertEquals(5,testResult);
+        assertEquals(-1.88,testResult);
 
     }
 
@@ -102,7 +118,7 @@ public class SubtractionOperationTest {
     public  void testingResultForNegativeSubtractionOperation() {
 
         double testResult = testCase10.getResult();
-        assertEquals(5,testResult);
+        assertEquals(1.0,testResult);
 
     }
 

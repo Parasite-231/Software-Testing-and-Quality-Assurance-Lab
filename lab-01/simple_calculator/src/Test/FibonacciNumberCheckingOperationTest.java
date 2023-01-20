@@ -3,7 +3,7 @@ package Test;
 import Main.FibonacciNumberCheckingOperation;
 import Main.PrimeNumberGenerationOperation;
 //import org.junit.jupiter.api.Test;
-import org.junit.Test;
+import org.junit.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,14 +22,30 @@ public class FibonacciNumberCheckingOperationTest {
     FibonacciNumberCheckingOperation testCase34 = new FibonacciNumberCheckingOperation();
     FibonacciNumberCheckingOperation testCase35 = new FibonacciNumberCheckingOperation();
 
+    @BeforeClass
+    public static void testExecutionBeforeExecutingAllTestsCases(){
+        System.out.println("...All Test execution - started");
+    }
+    @AfterClass
+    public static void testExecutionAfterExecutingAllTestsCases(){
+        System.out.println("...All Test execution - completed");
+    }
 
+    @Before
+    public void testExecutionBeforeExecutingEachTestsCases(){
+        System.out.println("...Test Running ");
+    }
+    @After
+    public void testExecutionAfterExecutingEachTestsCases(){
+        System.out.println("---Test Executed");
+    }
 
 
     @Test
     public void testingNSequencePositiveFibonacciNumbers() {
         FibonacciNumberCheckingOperation nFibonacci1 = new FibonacciNumberCheckingOperation();
         ArrayList<Integer> list;
-        list = new ArrayList<Integer>(Arrays.asList(2 ,8, 5, 1 ,13 ));
+        list = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 5, 7));
         assertEquals(list,testCase30.checkFib(new int[]{4, 2, 8, 5, 20, 1, 40, 13, 23},9));
 
 
@@ -70,7 +86,7 @@ public class FibonacciNumberCheckingOperationTest {
 
 
         Throwable exception = assertThrows(
-                RuntimeException.class, () -> {
+                ArrayIndexOutOfBoundsException.class, () -> {
 
                     testCase33.checkFib(new int[]{-4, -2, -8},101);
                 }

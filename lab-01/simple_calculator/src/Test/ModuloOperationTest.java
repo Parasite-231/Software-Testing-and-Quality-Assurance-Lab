@@ -4,7 +4,7 @@ import Main.ModuloOperation;
 import Main.ModuloOperation;
 import Main.MultiplicationOperation;
 //import org.junit.jupiter.api.Test;
-import org.junit.Test;
+import org.junit.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -28,7 +28,23 @@ public class ModuloOperationTest {
 
 
 
+    @BeforeClass
+    public static void testExecutionBeforeExecutingAllTestsCases(){
+        System.out.println("...All Test execution - started");
+    }
+    @AfterClass
+    public static void testExecutionAfterExecutingAllTestsCases(){
+        System.out.println("...All Test execution - completed");
+    }
 
+    @Before
+    public void testExecutionBeforeExecutingEachTestsCases(){
+        System.out.println("...Test Running ");
+    }
+    @After
+    public void testExecutionAfterExecutingEachTestsCases(){
+        System.out.println("---Test Executed");
+    }
 
 
 

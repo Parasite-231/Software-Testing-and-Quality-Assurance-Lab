@@ -4,7 +4,7 @@ import Main.AdditionOperation;
 import Main.MultiplicationOperation;
 import Main.MultiplicationOperation;
 //import org.junit.jupiter.api.Test;
-import org.junit.Test;
+import org.junit.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -25,7 +25,23 @@ public class MultiplicationOperationTest {
     MultiplicationOperation testCase67 = new MultiplicationOperation(2,1000000001);
 
 
+    @BeforeClass
+    public static void testExecutionBeforeExecutingAllTestsCases(){
+        System.out.println("...All Test execution - started");
+    }
+    @AfterClass
+    public static void testExecutionAfterExecutingAllTestsCases(){
+        System.out.println("...All Test execution - completed");
+    }
 
+    @Before
+    public void testExecutionBeforeExecutingEachTestsCases(){
+        System.out.println("...Test Running ");
+    }
+    @After
+    public void testExecutionAfterExecutingEachTestsCases(){
+        System.out.println("---Test Executed");
+    }
 
 
     @Test

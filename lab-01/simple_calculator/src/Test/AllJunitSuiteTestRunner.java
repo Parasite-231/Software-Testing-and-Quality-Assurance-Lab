@@ -1,10 +1,5 @@
 package Test;
-import Main.PowerOperation;
-import Main.PrimeNumberCheckingOperation;
 //import Test.SquareRootOperation;
-import Main.TrigonometricTanOperation;
-import Test.AdditionOperationTest;
-import org.junit.jupiter.api.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 @RunWith(Suite.class)
@@ -32,24 +27,7 @@ import org.junit.runners.Suite;
 
 
 })
-public class AllTest {
+public class AllJunitSuiteTestRunner {
 
 
-    @BeforeAll
-    public static void testExecutionBeforeExecutingAllTestsCases(){
-        System.out.println("...Test execution - started");
-    }
-    @AfterAll
-    public static void testExecutionAfterExecutingAllTestsCases(){
-        System.out.println("...Test execution - completed");
-    }
-    @BeforeEach
-    public void testCaseExecutionStarts(){
-        System.out.println("---Test Running");
-    }
-
-    @AfterEach
-    public void testCaseExecutionEnds(){
-        System.out.println("---Test Executed");
-    }
 }

@@ -25,7 +25,7 @@ public class FibonacciNumberCheckingOperation {
             System.out.println("None Present");
         if(n == 0){ throw  new RuntimeException("Number of terms is not specified !");
         }
-        if(n > 100){ throw  new RuntimeException("Number of terms is too large !");
+        if(n > 100){ throw  new ArrayIndexOutOfBoundsException("Number of terms is too large !");
         }
         if(n < 0){ throw  new RuntimeException("Number of terms cannot be negative !");
         }

@@ -1,15 +1,17 @@
 package Test;
 
 import Main.AdditionOperation;
+import org.junit.*;
 import org.junit.Test;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.DisplayNameGeneration;
+//import org.junit.jupiter.api.DisplayName;
+//import org.junit.jupiter.api.DisplayName;
+//import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 public class AdditionOperationTest {
+
 
     AdditionOperation testCase1 = new AdditionOperation(2,3);
     AdditionOperation testCase2 = new AdditionOperation(2.02,3.90);
@@ -24,11 +26,28 @@ public class AdditionOperationTest {
 
     AdditionOperation testCase7 = new AdditionOperation(-1000000001,2);
 
+//    @DisplayName("Test class demonstrating how the @DisplayName annotation works.")
+    @BeforeClass
+    public static void testExecutionBeforeExecutingAllTestsCases(){
+        System.out.println("...All Test execution - started");
+    }
+    @AfterClass
+    public static void testExecutionAfterExecutingAllTestsCases(){
+        System.out.println("...All Test execution - completed");
+    }
+
+    @Before
+    public void testExecutionBeforeExecutingEachTestsCases(){
+        System.out.println("...Test Running ");
+    }
+    @After
+    public void testExecutionAfterExecutingEachTestsCases(){
+        System.out.println("---Test Executed");
+    }
 
 
 
-
-    @Test(timeout = 1)
+    @Test(timeout = 10)
     public void testingForFirstIntegerInputNumber() {
 
         double testResult = testCase1.getNum1();
@@ -76,7 +95,7 @@ public class AdditionOperationTest {
     public void testingResultForFloatAdditionOperation() {
 
         double testResult = testCase2.getResult();
-        assertEquals(5,testResult);
+        assertEquals(5.92,testResult);
 
     }
 
@@ -102,7 +121,7 @@ public class AdditionOperationTest {
     public void testingResultForNegativeAdditionOperation() {
 
         double testResult = testCase3.getResult();
-        assertEquals(5,testResult);
+        assertEquals(-5,testResult);
 
     }
 
